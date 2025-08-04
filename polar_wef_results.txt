@@ -1,0 +1,8 @@
+Polar Code WEF Enumeration
+N=8, K=6, Design SNR=0.00 dB
+
+Coset 1: 0 -> [1 0 12 0 38 0 12 0 1]
+
+Final WEF: [1 0 12 0 38 0 12 0 1]
+
+Final WEF(X): 12*X^2 + 38*X^4 + 12*X^6 + X^8 + 1
