@@ -2,6 +2,10 @@
 
 This repository provides MATLAB scripts to **compute the Weight Enumerator Function (WEF)** of Polar Codes using **recursive enumeration**.
 
+These scripts have been implemented based on the recursive process demonstrated in the following paper and used to generate the results for the examples provided in this paper:
+
+M. Rowshan, V-F Dragoi, ``A Tutorial on Weight Structure of Polar Codes," submitted to the special issue on error correction codes of IEEE BITS.
+
 The WEF gives the number of codewords for each possible Hamming weight and is useful for understanding **minimum distance** and **error performance** of a code.
 
 ## Files
