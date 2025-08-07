@@ -1,4 +1,4 @@
-# Polar Code Recursive Weight Enumerator (WEF)
+# Polar Code's Recursive Weight Enumerator (WEF)
 
 This repository provides MATLAB scripts to **compute the Weight Enumerator Function (WEF)** of Polar Codes using **recursive enumeration**.
 
