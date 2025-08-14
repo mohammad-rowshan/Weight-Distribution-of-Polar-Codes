@@ -3,10 +3,10 @@
 This MATLAB script computes the weight distribution of polar codes for weights less than twice the minimum distance $(<2 \cdot w_{\min})$ using group action on the maximum-degreee monomials. It characterises codewords based on Type-I and Type-II structures and provides closed-form enumeration formulas, as described in the referenced works.
 
 ## Description
-The script calculates the partial weight distribution of polar codes (or Reed-Muller codes, if configured) by analysing the information set $ I $. It focuses on weights up to $2 \cdot w_{\min}$, where $ w_{\min} = 2^{n-r} $ is the minimum distance, determined by the maximum degree $ r $ of monomials in $ I $. The script leverages permutation group action to count codewords of specific weights efficiently.
+The script calculates the partial weight distribution of polar codes (or Reed-Muller codes, if configured) by analysing the information set $I$. It focuses on weights up to $2 \cdot w_{\min}$, where $ w_{\min} = 2^{n-r} $ is the minimum distance, determined by the maximum degree $r$ of monomials in $I$. The script leverages permutation group action to count codewords of specific weights efficiently.
 
 ## Features
-- Computes the maximum monomial degree $ r $ and minimum distance $ w_{\text{min}} $.
+- Computes the maximum monomial degree $r$ and minimum distance $w_{\text{min}}$.
 - Enumerates codeword multiplicities for weights $ w_{\text{min}}, 1.5 \cdot w_{\text{min}}, 1.75 \cdot w_{\text{min}}, \ldots $.
 - Distinguishes between Type-I and Type-II codeword structures.
 - Supports both polar codes (using `rate_profile`) and Reed-Muller (RM) codes (using `RM_profile`).
