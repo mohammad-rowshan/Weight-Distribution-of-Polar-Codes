@@ -1,4 +1,4 @@
-# Polar Code Weight Enumeration
+# Closed-form Weight Enumeration of Polar Codes
 
 This MATLAB script computes the weight distribution of polar codes for weights less than twice the minimum distance $(<2 \cdot w_{\min})$ using group action on the maximum-degree monomials. It characterises codewords based on Type-I and Type-II structures and provides closed-form enumeration formulas, as described in the referenced works.
 
