@@ -3,11 +3,11 @@
 This MATLAB script computes the weight distribution of polar codes for weights less than twice the minimum distance $(<2 \cdot w_{\min})$ using group action on the maximum-degreee monomials. It characterises codewords based on Type-I and Type-II structures and provides closed-form enumeration formulas, as described in the referenced works.
 
 ## Description
-The script calculates the partial weight distribution of polar codes (or Reed-Muller codes, if configured) by analysing the information set \( I \). It focuses on weights up to $2 \cdot w_{\min}$, where \( w_{\min} = 2^{n-r} \) is the minimum distance, determined by the maximum degree \( r \) of monomials in \( I \). The script leverages permutation group action to count codewords of specific weights efficiently.
+The script calculates the partial weight distribution of polar codes (or Reed-Muller codes, if configured) by analysing the information set $ I $. It focuses on weights up to $2 \cdot w_{\min}$, where $ w_{\min} = 2^{n-r} $ is the minimum distance, determined by the maximum degree $ r $ of monomials in $ I $. The script leverages permutation group action to count codewords of specific weights efficiently.
 
 ## Features
-- Computes the maximum monomial degree \( r \) and minimum distance \( w_{\text{min}} \).
-- Enumerates codeword multiplicities for weights \( w_{\text{min}}, 1.5 \cdot w_{\text{min}}, 1.75 \cdot w_{\text{min}}, \ldots \).
+- Computes the maximum monomial degree $ r $ and minimum distance $ w_{\text{min}} $.
+- Enumerates codeword multiplicities for weights $ w_{\text{min}}, 1.5 \cdot w_{\text{min}}, 1.75 \cdot w_{\text{min}}, \ldots $.
 - Distinguishes between Type-I and Type-II codeword structures.
 - Supports both polar codes (using `rate_profile`) and Reed-Muller (RM) codes (using `RM_profile`).
 - Includes input validation and error handling.
@@ -34,24 +34,29 @@ The script calculates the partial weight distribution of polar codes (or Reed-Mu
    ```matlab
    n = 6;              % log2(N), where N is the code length
    R = 0.5;            % Code rate (for polar codes)
-   order = 3;          % Order of RM code (for RM codes)
+   ...
    design_snr_db = 3;  % Design SNR for polar code reliability
+   ...
+   I = rate_profile(design_snr_db, N, K)';
    ```
-
+   
 4. **Optional: Reed-Muller Codes**:
    To enumerate weights for an RM code, uncomment the lines for `K` calculation and use `RM_profile`:
    ```matlab
-   % K = 0;
-   % for r = [0:order]
-   %     K = K + nchoosek(n,r);
-   % end
+   order = 3;          % Order of RM code (for RM codes)
+   ...
+   K = 0;
+   for r = [0:order]
+       K = K + nchoosek(n,r);
+   end
+   ...
    I = RM_profile(n, order)';
    ```
 
 5. **Custom Information Set**:
    To use a specific information set \( I \), modify the script to include your indices, e.g.:
    ```matlab
-   I = [6, 9, 20, 26, 28, 37, 41, 42, 44, 50, 52]; % Example I_3
+   I = [6, 9, 20, 26, 28, 37, 41, 42, 44, 50, 52]; % Example 
    ```
 
 ## Inputs
@@ -68,7 +73,7 @@ The script calculates the partial weight distribution of polar codes (or Reed-Mu
 - `A_typ`: Counts of Type I and Type II codewords.
 
 ## Example
-For the default parameters (\( n = 6 \), \( R = 0.5 \), \( N = 64 \), \( K = 32 \), \( design_snr_db = 3 \)):
+For the illustrative example in ``A Tutorial on Weight Structure of Polar Code," submitted to IEEE BITS:
 ```matlab
 I = [23, 26, 27, 28, 29, 30, 31, 37, 38, 39, 41, 42, 43, 44, 45, 46, 47, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63];
 [r, w, A_w, A_typ] = weight_enum(I, n);
