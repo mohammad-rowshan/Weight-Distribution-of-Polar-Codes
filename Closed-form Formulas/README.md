@@ -102,4 +102,4 @@ Copyright (c) 2025, Mohammad Rowshan and Vlad-Florin Dragoi. All rights reserved
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the source code retains the above copyright notice.
 
 ## Contact
-For questions or feedback, contact the authors: [mrowshan@connect.ust.hk]
+For questions or feedback, contact the authors: mrowshan at ieee dot org
