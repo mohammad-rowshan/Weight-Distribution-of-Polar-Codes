@@ -1,14 +1,14 @@
 # Polar Code Weight Enumeration
 
-This MATLAB script computes the weight distribution of polar codes for weights less than twice the minimum distance $(2 \cdot w_{\min})$ using group action theory. It characterizes codewords based on Type I and Type II structures and provides closed-form enumeration formulas, as described in the referenced works.
+This MATLAB script computes the weight distribution of polar codes for weights less than twice the minimum distance $(<2 \cdot w_{\min})$ using group action on the maximum-degreee monomials. It characterises codewords based on Type-I and Type-II structures and provides closed-form enumeration formulas, as described in the referenced works.
 
 ## Description
-The script calculates the weight distribution of polar codes (or Reed-Muller codes, if configured) by analyzing the information set \( I \). It focuses on weights up to \( 2 \cdot w_{\text{min}} \), where \( w_{\text{min}} = 2^{n-r} \) is the minimum distance, determined by the maximum degree \( r \) of monomials in \( I \). The script leverages group action theory to count codewords of specific weights efficiently.
+The script calculates the partial weight distribution of polar codes (or Reed-Muller codes, if configured) by analysing the information set \( I \). It focuses on weights up to $2 \cdot w_{\min}$, where \( w_{\min} = 2^{n-r} \) is the minimum distance, determined by the maximum degree \( r \) of monomials in \( I \). The script leverages permutation group action to count codewords of specific weights efficiently.
 
 ## Features
 - Computes the maximum monomial degree \( r \) and minimum distance \( w_{\text{min}} \).
 - Enumerates codeword multiplicities for weights \( w_{\text{min}}, 1.5 \cdot w_{\text{min}}, 1.75 \cdot w_{\text{min}}, \ldots \).
-- Distinguishes between Type I and Type II codeword structures.
+- Distinguishes between Type-I and Type-II codeword structures.
 - Supports both polar codes (using `rate_profile`) and Reed-Muller (RM) codes (using `RM_profile`).
 - Includes input validation and error handling.
 
@@ -87,19 +87,14 @@ Type-II: W codewords
 ```
 
 ## References
-1. V.-F. Dragoi, M. Rowshan, J. Yuan, "On the closed-form weight enumeration of polar codes: 1.5d-weight codewords," *IEEE Trans. Commun.*, 2024.
-2. M. Rowshan, V.-F. Dragoi, J. Yuan, "Weight structure of low/high-rate polar codes and its applications," *ISIT 2024*.
-3. V.-F. Dragoi, M. Rowshan, "On Weight Enumeration and Structure Characterization of Polar Codes via Group Actions," 2025, [arXiv:2504.19544v2](http://arxiv.org/abs/2504.19544v2) (presented at ISIT'25).
+1. V. -F. Drăgoi, M. Rowshan and J. Yuan, "On the Closed-Form Weight Enumeration of Polar Codes: 1.5d -Weight Codewords," in IEEE Transactions on Communications, vol. 72, no. 10, pp. 5972-5987, Oct. 2024, doi: 10.1109/TCOMM.2024.3394749.
+2. M. Rowshan, V. Drăgoi and J. Yuan, "Weight Structure of Low/High-Rate Polar Codes and Its Applications," 2024 IEEE International Symposium on Information Theory (ISIT), Athens, Greece, 2024, pp. 2945-2950, doi: 10.1109/ISIT57864.2024.10619618.
+3. V.-F. Dragoi and M. Rowshan, "On weight enumeration and structure characterization of polar codes via group actions," arXiv:2504.19544v2, 2025. [Online]. Available: https://arxiv.org/abs/2504.19544 (presented at ISIT'25).
 
 ## License
 Copyright (c) 2025, Mohammad Rowshan and Vlad-Florin Dragoi. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the source code retains the above copyright notice.
 
-## Contributing
-Contributions are welcome! Please submit issues or pull requests on GitHub. Ensure any modifications align with the script’s purpose and maintain the copyright notice.
-
 ## Contact
-For questions or feedback, contact the authors:
-- Mohammad Rowshan: [email@example.com]
-- Vlad-Florin Dragoi: [email@example.com]
+For questions or feedback, contact the authors: [mrowshan@connect.ust.hk]
