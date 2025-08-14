@@ -1,6 +1,6 @@
 # Polar Code Weight Enumeration
 
-This MATLAB script computes the weight distribution of polar codes for weights less than twice the minimum distance (\(2 \cdot w_{\text{min}}\)) using group action theory. It characterizes codewords based on Type I and Type II structures and provides closed-form enumeration formulas, as described in the referenced works.
+This MATLAB script computes the weight distribution of polar codes for weights less than twice the minimum distance $(2 \cdot w_{\min})$ using group action theory. It characterizes codewords based on Type I and Type II structures and provides closed-form enumeration formulas, as described in the referenced works.
 
 ## Description
 The script calculates the weight distribution of polar codes (or Reed-Muller codes, if configured) by analyzing the information set \( I \). It focuses on weights up to \( 2 \cdot w_{\text{min}} \), where \( w_{\text{min}} = 2^{n-r} \) is the minimum distance, determined by the maximum degree \( r \) of monomials in \( I \). The script leverages group action theory to count codewords of specific weights efficiently.
