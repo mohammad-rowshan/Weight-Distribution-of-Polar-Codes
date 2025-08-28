@@ -73,7 +73,7 @@ The script calculates the partial weight distribution of polar codes (or Reed-Mu
 - `A_typ`: Counts of Type I and Type II codewords.
 
 ## Example
-For the illustrative example in ``A Tutorial on Weight Structure of Polar Code," submitted to IEEE BITS:
+For the illustrative example, consider the following information set:
 ```matlab
 I = [23, 26, 27, 28, 29, 30, 31, 37, 38, 39, 41, 42, 43, 44, 45, 46, 47, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63];
 [r, w, A_w, A_typ] = weight_enum(I, n);
