@@ -1,6 +1,6 @@
 # Weight Distribution of Polar Codes
 
-This repository contains two MATLAB scripts for the enumeration of polar codes. These scripts are supplementary resources for the following papers:
+This repository contains two MATLAB scripts for weight enumeration and returning partial or the entire weight distribution (a.k.a. weight spectrum) of polar codes.
 
 They are organised into two folders.
 1. Closed-form Formulas:
