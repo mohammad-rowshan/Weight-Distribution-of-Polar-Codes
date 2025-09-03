@@ -2,8 +2,6 @@
 
 This repository contains two MATLAB scripts for the enumeration of polar codes. These scripts are supplementary resources for the following papers:
 
-M. Rowshan, V-F Dragoi, ``A Tutorial on Weight Structure of Polar Codes," submitted to the Special Issue on Error-Correcting Codes of IEEE BITS magazine. (both scripts)
-
 They are organised into two folders.
 1. Closed-form Formulas:
 This folder contains a script that uses closed-form formulas to compute the partial weight distribution of polar codes for weights less than twice the minimum distance $(<2 \cdot w_{\min})$ using group action on the maximum-degree monomials. Since this algorithm is based on closed-form formulas presented in [1-2] and further elaborated in [4], it is fast and can be used for short, medium, and long codes.
