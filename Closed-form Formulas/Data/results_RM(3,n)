@@ -1,0 +1,44 @@
+Code parameters: (128,64) with n=7
+Maximum monomial degree: r = 3
+Minimum distance: d_min = 2^(7-3) = 16
+Weight distribution for w < 2*w_min:
+  w_1 = 1.00*w_min = 16: 94488 codewords
+  w_2 = 1.50*w_min = 24: 74078592 codewords
+  w_3 = 1.75*w_min = 28: 3128434688 codewords
+Type-I : 2902671360 codewords
+Type-II: 299841920 codewords
+
+
+Code parameters: (256,93) with n=8
+Maximum monomial degree: r = 3
+Minimum distance: d_min = 2^(8-3) = 32
+Weight distribution for w < 2*w_min:
+  w_1 = 1.00*w_min = 32: 777240 codewords
+  w_2 = 1.50*w_min = 48: 2698577280 codewords
+  w_3 = 1.75*w_min = 56: 304296714240 codewords
+Type-I : 246727065600 codewords
+Type-II: 60268225920 codewords
+
+
+Code parameters: (512,130) with n=9
+Maximum monomial degree: r = 3
+Minimum distance: d_min = 2^(9-3) = 64
+Weight distribution for w < 2*w_min:
+  w_1 = 1.00*w_min = 64: 6304280 codewords
+  w_2 = 1.50*w_min = 96: 91931532672 codewords
+  w_3 = 1.75*w_min = 112: 27817105940480 codewords
+  w_4 = 1.88*w_min = 120: 29533455515648 codewords
+Type-I : 18011075788800 codewords
+Type-II: 9897961684352 codewords
+
+
+Code parameters: (1024,176) with n=10
+Maximum monomial degree: r = 3
+Minimum distance: d_min = 2^(10-3) = 128
+Weight distribution for w < 2*w_min:
+  w_1 = 1.00*w_min = 128: 50781720 codewords
+  w_2 = 1.50*w_min = 192: 3033740578176 codewords
+  w_3 = 1.75*w_min = 224: 2661436632391680 codewords
+  w_4 = 1.88*w_min = 240: 30212724992507904 codewords
+Type-I : 1228355368796160 codewords
+Type-II: 1436115004173696 codewords
